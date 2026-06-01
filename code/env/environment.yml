@@ -10,7 +10,8 @@ dependencies:
   - pip:
       - torch
       - torchvision
-      - transformers
+      # Florence-2 trust_remote_code is not compatible with transformers 5.x.
+      - "transformers==4.49.0"
       - accelerate
       - timm
       - einops

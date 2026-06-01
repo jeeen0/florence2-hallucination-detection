@@ -1,6 +1,10 @@
+# Florence-2 trust_remote_code modules are incompatible with transformers 5.x
+# (the custom config accesses attributes removed in the 5.x rewrite).
+# Pinned to the last 4.x release that ships Florence-2 fixes.
+transformers==4.49.0
+
 torch
 torchvision
-transformers
 accelerate
 timm
 einops
