@@ -10,28 +10,36 @@ from dataclasses import dataclass
 from PIL import Image
 
 from florence2 import Florence2Runner
-from .extract import COCO80, SYNONYM_MAP, Mention, normalize
+from .extract import (
+    COCO80,
+    SYNONYM_MAP_AGGRESSIVE,
+    SYNONYM_MAP_STRICT,
+    Mention,
+    normalize,
+)
 
 
-def _label_to_canonical_table() -> dict[str, str]:
+def _label_to_canonical_table(synonym_map: dict[str, list[str]]) -> dict[str, str]:
     table: dict[str, str] = {}
     for canonical in COCO80:
         table[canonical] = canonical
-        for syn in SYNONYM_MAP.get(canonical, []):
+        for syn in synonym_map.get(canonical, []):
             table[syn] = canonical
     return table
 
 
-_LABEL_TO_CANONICAL = _label_to_canonical_table()
+_LABEL_STRICT = _label_to_canonical_table(SYNONYM_MAP_STRICT)
+_LABEL_AGGRESSIVE = _label_to_canonical_table(SYNONYM_MAP_AGGRESSIVE)
 
 
-def label_to_canonical(label: str) -> str | None:
-    return _LABEL_TO_CANONICAL.get(normalize(label))
+def label_to_canonical(label: str, vocab: str = "strict") -> str | None:
+    table = _LABEL_AGGRESSIVE if vocab == "aggressive" else _LABEL_STRICT
+    return table.get(normalize(label))
 
 
 @dataclass
 class Detection:
-    label: str          # raw label as returned by Florence-2
+    label: str
     canonical: str | None
     bbox: tuple[float, float, float, float]
 
@@ -40,10 +48,14 @@ class Detection:
 class Verdict:
     mention: Mention
     supported: bool
-    bbox: tuple[float, float, float, float] | None  # first matching detection
+    bbox: tuple[float, float, float, float] | None
 
 
-def detect_objects(runner: Florence2Runner, image: Image.Image) -> list[Detection]:
+def detect_objects(
+    runner: Florence2Runner,
+    image: Image.Image,
+    vocab: str = "strict",
+) -> list[Detection]:
     out = runner.run("<OD>", image)["<OD>"]
     bboxes = out.get("bboxes", [])
     labels = out.get("labels", [])
@@ -52,7 +64,7 @@ def detect_objects(runner: Florence2Runner, image: Image.Image) -> list[Detectio
         detections.append(
             Detection(
                 label=str(label),
-                canonical=label_to_canonical(str(label)),
+                canonical=label_to_canonical(str(label), vocab=vocab),
                 bbox=tuple(bbox),
             )
         )

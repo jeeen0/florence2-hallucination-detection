@@ -63,6 +63,8 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--model", default="microsoft/Florence-2-base-ft")
     ap.add_argument("--strategy", choices=["od", "grounding"], default="od")
+    ap.add_argument("--vocab", choices=["strict", "aggressive"], default="strict",
+                    help="Synonym mapping for OD label canonicalization")
     ap.add_argument("--data-dir", type=Path, default=REPO_ROOT / "data" / "coco_val")
     ap.add_argument("--caption-csv", type=Path,
                     default=REPO_ROOT / "outputs" / "captions" / "base_caption_50.csv")
@@ -97,7 +99,7 @@ def main() -> None:
         mentions = mentions_by_image.get(img_id, [])
 
         if args.strategy == "od":
-            detections = detect_objects(runner, image)
+            detections = detect_objects(runner, image, vocab=args.vocab)
             verdicts = verify_with_detections(mentions, detections)
         else:
             verdicts = verify_with_phrase_grounding(runner, image, mentions)

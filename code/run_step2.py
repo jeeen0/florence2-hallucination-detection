@@ -29,6 +29,8 @@ def main() -> None:
     ap.add_argument("--model", default="microsoft/Florence-2-base-ft")
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--prompt", choices=["caption", "detailed"], default="caption")
+    ap.add_argument("--vocab", choices=["strict", "aggressive"], default="strict",
+                    help="Synonym mapping vocabulary for mention extraction")
     ap.add_argument("--data-dir", type=Path, default=REPO_ROOT / "data" / "coco_val")
     ap.add_argument("--gt-json", type=Path,
                     default=REPO_ROOT / "data" / "coco_annotations" / "instances_val2017.json",
@@ -60,9 +62,9 @@ def main() -> None:
     for idx, (img_id, path) in enumerate(images, 1):
         image = Image.open(path).convert("RGB")
         caption = runner.run(prompt_token, image)[prompt_token].strip()
-        canonicals = extract_unique_canonicals(caption)
+        canonicals = extract_unique_canonicals(caption, vocab=args.vocab)
         caption_rows.append((img_id, prompt_token, caption, ",".join(canonicals)))
-        for m in extract_mentions(caption):
+        for m in extract_mentions(caption, vocab=args.vocab):
             mention_rows.append((img_id, m.surface, m.canonical, m.start, m.end))
         print(f"  [{idx:3d}/{len(images)}] id={img_id:012d}  -> {canonicals}")
 

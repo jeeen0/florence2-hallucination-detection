@@ -1,5 +1,13 @@
 from .caption import generate_caption
-from .extract import COCO80, SYNONYM_MAP, Mention, extract_mentions, extract_unique_canonicals
+from .extract import (
+    COCO80,
+    SYNONYM_MAP,
+    SYNONYM_MAP_AGGRESSIVE,
+    SYNONYM_MAP_STRICT,
+    Mention,
+    extract_mentions,
+    extract_unique_canonicals,
+)
 from .verify import (
     Detection,
     Verdict,
@@ -14,6 +22,8 @@ from .visualize import draw_verdicts
 __all__ = [
     "COCO80",
     "SYNONYM_MAP",
+    "SYNONYM_MAP_AGGRESSIVE",
+    "SYNONYM_MAP_STRICT",
     "Mention",
     "Detection",
     "Verdict",
