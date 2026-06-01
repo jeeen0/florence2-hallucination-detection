@@ -127,7 +127,7 @@ florence2-hallucination-detection/
 
 ## Roadmap
 
-| Day | Focus | Key artifacts |
+| Step | Focus | Key artifacts |
 | --: | --- | --- |
 | 1 | conda env, Florence-2-base-ft 실행, `<CAPTION>`/`<OD>` 출력 형식 확정 | `outputs/captions/sample_caption.csv`, `outputs/visualizations/sample_od.jpg` |
 | 2 | COCO val 일부 caption 생성 + mention 추출 (synonym 매핑 포함) | `outputs/captions/base_caption_50.csv`, `..._extracted_objects.csv` |
@@ -165,9 +165,3 @@ florence2-hallucination-detection/
 2. Lin, Tsung-Yi, et al. *Microsoft COCO: Common Objects in Context.* ECCV 2014.
 3. Rohrbach, Anna, et al. *Object Hallucination in Image Captioning.* EMNLP 2018.
 4. Li, Yifan, et al. *Evaluating Object Hallucination in Large Vision-Language Models (POPE).* EMNLP 2023.
-
-## Team
-
-**Team 15 · 다반**
-- 이시현 (20221802)
-- 변진영 (20221794)
