@@ -27,8 +27,10 @@ from pathlib import Path
 
 from coco_gt import CocoGt
 from modules.metrics import (
+    bootstrap_ci,
     confusion_unsupported,
     iou,
+    mention_rate,
     precision_recall_f1,
     safe_div,
 )
@@ -106,6 +108,20 @@ def main() -> None:
             grd_hits += 1
     grd_acc = safe_div(grd_hits, grd_total)
 
+    # Bootstrap 95% CIs (percentile, n_resamples=1000, seed=42).
+    # Hallucination rates resampled at the *mention* level.
+    baseline_flags = [not r["in_gt"] for r in rows]
+    verified_flags = [not r["in_gt"] for r in supported]
+    _, b_lo, b_hi = bootstrap_ci(baseline_flags, mention_rate)
+    _, v_lo, v_hi = bootstrap_ci(verified_flags, mention_rate)
+
+    def _f1_stat(sample):
+        cm_s = confusion_unsupported(list(sample))
+        _, _, f1_s = precision_recall_f1(cm_s)
+        return f1_s
+
+    _, f1_lo, f1_hi = bootstrap_ci(rows, _f1_stat)
+
     metrics = {
         "model": args.label,
         "n_images": n_images,
@@ -114,12 +130,15 @@ def main() -> None:
         "unsupported": len(unsupported),
         "baseline_hallucinated": baseline_hallu,
         "baseline_hallucination_rate": baseline_rate,
+        "baseline_hallucination_rate_ci95": [b_lo, b_hi],
         "verified_hallucinated": verified_hallu,
         "verified_hallucination_rate": verified_rate,
+        "verified_hallucination_rate_ci95": [v_lo, v_hi],
         "unsupported_confusion": cm,
         "unsupported_precision": precision,
         "unsupported_recall": recall,
         "unsupported_f1": f1,
+        "unsupported_f1_ci95": [f1_lo, f1_hi],
         "grounding_iou_thr": args.iou_thr,
         "grounding_total_evaluable": grd_total,
         "grounding_hits": grd_hits,
@@ -152,9 +171,9 @@ def main() -> None:
     print(f"Saved -> {args.out_table}")
     print("\n--- Summary ---")
     print(f"images={n_images}  mentions={n_mentions}  supported={len(supported)}  unsupported={len(unsupported)}")
-    print(f"Baseline:  hallucinated={baseline_hallu}/{n_mentions}  rate={baseline_rate:.4f}")
-    print(f"Verified:  hallucinated={verified_hallu}/{len(supported)}  rate={verified_rate:.4f}")
-    print(f"Unsupported P/R/F1:  {precision:.4f} / {recall:.4f} / {f1:.4f}  (cm={cm})")
+    print(f"Baseline:  hallucinated={baseline_hallu}/{n_mentions}  rate={baseline_rate:.4f}  [95%CI {b_lo:.4f}..{b_hi:.4f}]")
+    print(f"Verified:  hallucinated={verified_hallu}/{len(supported)}  rate={verified_rate:.4f}  [95%CI {v_lo:.4f}..{v_hi:.4f}]")
+    print(f"Unsupported P/R/F1:  {precision:.4f} / {recall:.4f} / {f1:.4f}  [F1 95%CI {f1_lo:.4f}..{f1_hi:.4f}]  (cm={cm})")
     print(f"Grounding Acc@{args.iou_thr}:  {grd_hits}/{grd_total}  =  {grd_acc:.4f}")
 
 
