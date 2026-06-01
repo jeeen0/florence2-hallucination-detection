@@ -48,7 +48,7 @@ def main() -> None:
                     default=REPO_ROOT / "outputs" / "captions" / "large_strict_caption_500.csv")
     ap.add_argument("--n", type=int, default=200, help="First N images from the caption CSV")
     ap.add_argument("--image-dir", type=Path, default=REPO_ROOT / "data" / "coco_val")
-    ap.add_argument("--blip2-model", default="Salesforce/blip2-opt-2.7b")
+    ap.add_argument("--blip2-model", default="Salesforce/blip-image-captioning-large")
     ap.add_argument("--florence-model", default="microsoft/Florence-2-large-ft")
     ap.add_argument("--vocab", choices=["strict", "aggressive"], default="strict")
     ap.add_argument("--out-blip2-caption", type=Path,

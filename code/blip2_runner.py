@@ -1,15 +1,20 @@
-"""BLIP-2 caption backend (Salesforce/blip2-opt-2.7b) for cross-model verification."""
+"""BLIP caption backend for cross-model verification.
+
+Default model: ``Salesforce/blip-image-captioning-large`` (~470M params, ~1.7 GB
+fp16). The original BLIP-2 OPT-2.7B exceeds the 8 GB VRAM of an RTX 3070 when
+co-loaded with Florence-2-large-ft, so we fall back to the lighter BLIP.
+The class name is preserved for backward compatibility with the script."""
 from __future__ import annotations
 
 import torch
 from PIL import Image
-from transformers import Blip2ForConditionalGeneration, Blip2Processor
+from transformers import BlipForConditionalGeneration, BlipProcessor
 
 
 class Blip2Captioner:
     def __init__(
         self,
-        model_id: str = "Salesforce/blip2-opt-2.7b",
+        model_id: str = "Salesforce/blip-image-captioning-large",
         device: str | None = None,
         dtype: torch.dtype | None = None,
     ) -> None:
@@ -20,9 +25,9 @@ class Blip2Captioner:
         self.device = device
         self.dtype = dtype
         self.model_id = model_id
-        self.processor = Blip2Processor.from_pretrained(model_id)
+        self.processor = BlipProcessor.from_pretrained(model_id)
         self.model = (
-            Blip2ForConditionalGeneration.from_pretrained(model_id, torch_dtype=dtype)
+            BlipForConditionalGeneration.from_pretrained(model_id, torch_dtype=dtype)
             .to(device)
             .eval()
         )
