@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.conda/
+*.conda
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Data — do not commit large datasets / images
+data/coco_val/*
+data/coco_annotations/*
+data/**/*.jpg
+data/**/*.jpeg
+data/**/*.png
+data/**/*.zip
+data/**/*.tar
+data/**/*.tar.gz
+data/**/*.json
+!data/**/.gitkeep
+
+# Model weights / caches
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.onnx
+hf_cache/
+.cache/
+checkpoints/
+
+# Generated outputs — keep folder structure, ignore contents
+outputs/**/*
+!outputs/**/.gitkeep
+
+# Paper build artifacts
+paper/**/*.bak
+paper/**/~$*
+paper/**/*.tmp
+
+# Misc
+*.tmp
+*.bak
+*.~lock.*
