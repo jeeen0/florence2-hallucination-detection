@@ -125,6 +125,28 @@ florence2-hallucination-detection/
 | RTX 4090 | large-ft final experiments |
 | RTX PRO 6000 | (if available) large-ft final & bulk processing |
 
+## Quickstart
+
+```bash
+# 1. Create env (conda)
+conda env create -f code/env/environment.yml
+conda activate florence2-hallu
+
+# Or with pip:
+# pip install -r code/env/requirements.txt
+
+# 2. Step 1 smoke test — run <CAPTION> / <DETAILED_CAPTION> / <OD> on one image
+python code/run_sample.py --image path/to/image.jpg
+
+# Outputs:
+#   outputs/captions/sample_caption.csv
+#   outputs/captions/sample_od.csv
+#   outputs/captions/sample_raw.json
+#   outputs/visualizations/sample_od.jpg
+```
+
+First run downloads Florence-2 weights from Hugging Face (~470 MB for `base-ft`). Set `--model microsoft/Florence-2-large-ft` for the larger checkpoint.
+
 ## Roadmap
 
 | Step | Focus | Key artifacts |
