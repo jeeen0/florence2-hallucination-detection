@@ -1,6 +1,7 @@
-"""COCO val2017 image fetching utilities (no annotations required)."""
+"""COCO val2017 image fetching utilities."""
 from __future__ import annotations
 
+import json
 import random
 import urllib.error
 import urllib.request
@@ -43,11 +44,20 @@ def collect_val2017_images(
     n: int,
     target_dir: Path,
     seed: int = 42,
+    gt_path: Path | None = None,
 ) -> list[tuple[int, Path]]:
+    """If gt_path points to instances_val2017.json, sample IDs from its image list.
+    Otherwise fall back to the hardcoded CANDIDATE_IDS pool (development bootstrap)."""
     target_dir.mkdir(parents=True, exist_ok=True)
+    if gt_path is not None and gt_path.exists():
+        with gt_path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+        candidates = [img["id"] for img in data["images"]]
+    else:
+        candidates = list(CANDIDATE_IDS)
     rng = random.Random(seed)
-    candidates = list(CANDIDATE_IDS)
     rng.shuffle(candidates)
+
     collected: list[tuple[int, Path]] = []
     for cid in candidates:
         if len(collected) >= n:

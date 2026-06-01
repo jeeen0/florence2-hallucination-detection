@@ -30,6 +30,9 @@ def main() -> None:
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--prompt", choices=["caption", "detailed"], default="caption")
     ap.add_argument("--data-dir", type=Path, default=REPO_ROOT / "data" / "coco_val")
+    ap.add_argument("--gt-json", type=Path,
+                    default=REPO_ROOT / "data" / "coco_annotations" / "instances_val2017.json",
+                    help="If present, sample image IDs from this file instead of CANDIDATE_IDS")
     ap.add_argument("--out-caption", type=Path,
                     default=REPO_ROOT / "outputs" / "captions" / "base_caption_50.csv")
     ap.add_argument("--out-mentions", type=Path,
@@ -37,7 +40,8 @@ def main() -> None:
     args = ap.parse_args()
 
     print(f"[step2] collecting up to {args.n} COCO val2017 images -> {args.data_dir}")
-    images = collect_val2017_images(args.n, args.data_dir, seed=args.seed)
+    images = collect_val2017_images(args.n, args.data_dir, seed=args.seed,
+                                    gt_path=args.gt_json if args.gt_json.exists() else None)
     print(f"[step2] {len(images)} images available")
     if not images:
         raise SystemExit("No images downloaded; check network or CANDIDATE_IDS")
