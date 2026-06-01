@@ -17,7 +17,7 @@ dist/
 # Virtual environments
 .venv/
 venv/
-env/
+/env/
 .conda/
 *.conda
 
@@ -56,7 +56,9 @@ hf_cache/
 checkpoints/
 
 # Generated outputs — keep folder structure, ignore contents
-outputs/**/*
+outputs/**
+!outputs/
+!outputs/*/
 !outputs/**/.gitkeep
 
 # Paper build artifacts

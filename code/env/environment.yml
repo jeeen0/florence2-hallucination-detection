@@ -1,0 +1,24 @@
+name: florence2-hallu
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - torch
+      - torchvision
+      - transformers
+      - accelerate
+      - timm
+      - einops
+      - pillow
+      - opencv-python
+      - matplotlib
+      - pandas
+      - numpy
+      - tqdm
+      - pycocotools
+      - pyyaml

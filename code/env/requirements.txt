@@ -1,0 +1,14 @@
+torch
+torchvision
+transformers
+accelerate
+timm
+einops
+pillow
+opencv-python
+matplotlib
+pandas
+numpy
+tqdm
+pycocotools
+pyyaml
