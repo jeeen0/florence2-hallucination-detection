@@ -127,8 +127,8 @@ def main() -> None:
 
     total_sup = sum(1 for r in rows if r[3] == "supported")
     total_un = sum(1 for r in rows if r[3] == "unsupported")
-    print(f"\nSaved -> {args.out_csv.relative_to(REPO_ROOT)}")
-    print(f"Saved -> {args.out_viz_dir.relative_to(REPO_ROOT)}/ ({len(image_ids)} images)")
+    print(f"\nSaved -> {args.out_csv}")
+    print(f"Saved -> {args.out_viz_dir}/ ({len(image_ids)} images)")
     print(f"total_mentions={len(rows)}  supported={total_sup}  unsupported={total_un}")
 
 

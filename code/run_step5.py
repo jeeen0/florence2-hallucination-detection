@@ -125,10 +125,10 @@ def main() -> None:
         f.write("\n".join(lines))
 
     print(f"TP={len(cases['TP'])}  FN={len(cases['FN'])}  FP={len(cases['FP'])}  TN={len(cases['TN'])}")
-    print(f"Saved -> {out_success.relative_to(REPO_ROOT)}/")
-    print(f"Saved -> {out_fn.relative_to(REPO_ROOT)}/")
-    print(f"Saved -> {out_fp.relative_to(REPO_ROOT)}/")
-    print(f"Saved -> {md_path.relative_to(REPO_ROOT)}")
+    print(f"Saved -> {out_success}/")
+    print(f"Saved -> {out_fn}/")
+    print(f"Saved -> {out_fp}/")
+    print(f"Saved -> {md_path}")
 
 
 if __name__ == "__main__":

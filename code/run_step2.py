@@ -78,8 +78,8 @@ def main() -> None:
         for row in mention_rows:
             w.writerow(row)
 
-    print(f"\nSaved -> {args.out_caption.relative_to(REPO_ROOT)}")
-    print(f"Saved -> {args.out_mentions.relative_to(REPO_ROOT)}")
+    print(f"\nSaved -> {args.out_caption}")
+    print(f"Saved -> {args.out_mentions}")
     print(f"images={len(caption_rows)}  total_mentions={len(mention_rows)}")
 
 

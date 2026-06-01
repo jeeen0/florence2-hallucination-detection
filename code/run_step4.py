@@ -148,8 +148,8 @@ def main() -> None:
             f"{verified_rate:.4f}", f"{f1:.4f}", f"{grd_acc:.4f}",
         ])
 
-    print(f"\nSaved -> {args.out_json.relative_to(REPO_ROOT)}")
-    print(f"Saved -> {args.out_table.relative_to(REPO_ROOT)}")
+    print(f"\nSaved -> {args.out_json}")
+    print(f"Saved -> {args.out_table}")
     print("\n--- Summary ---")
     print(f"images={n_images}  mentions={n_mentions}  supported={len(supported)}  unsupported={len(unsupported)}")
     print(f"Baseline:  hallucinated={baseline_hallu}/{n_mentions}  rate={baseline_rate:.4f}")
