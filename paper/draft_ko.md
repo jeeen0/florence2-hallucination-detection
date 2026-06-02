@@ -189,11 +189,11 @@ BLIP-large 가 Florence-2 보다 본 500장에서 약 2× 자주 hallucinate 한
 
 **검증 전략**: `<CAPTION_TO_PHRASE_GROUNDING>` 은 본 실험에서 모든 mention 에 대해 적어도 하나의 bbox 를 반환하여 unsupported 가 0건이 되었다 (F1 = 0). 즉 phrase grounding 은 검증 신호로 작동하지 않으며, **본 연구에서 `<OD>` 가 일관되게 더 적합한 verification primitive 임을 보인다**.
 
-### 5.6 정성 분석 (그림 2~4)
+### 5.6 정성 분석 (그림 2~4, 모두 2000장 메인 실험에서 추출)
 
-- **그림 2 — Joint failure**: image_id 5503 *"A person standing in front of a toilet"* — GT에는 `toilet`만, 사람 없음. Florence-2 caption과 OD 둘 다 `person`을 잘못 인식 → 검증 통과. 동일 모델 self-verification의 본질적 사각.
-- **그림 3 — OD recall 한계**: image_id 64084 detailed caption *"plates, spoons, forks, bottles..."* — GT에 spoon 존재. caption은 정확. 그러나 OD가 작은 spoon을 못 잡음 → FP (over-flag).
-- **그림 4 — 검증 성공**: image_id 78426 caption *"...a phone..."* — GT에 cell phone 없음, OD에도 없음 → 정확히 unsupported로 깃발.
+- **그림 2 — Joint failure (FN)**: `image_id 253433` caption *"A teddy bear wearing a mask and a bow tie"* — GT 카테고리는 `couch, teddy bear` 로 *tie* 가 없음. 그러나 Florence-2 caption 과 `<OD>` 가 둘 다 `tie` 를 잘못 인식 → 검증을 통과해버린다. 동일 모델 self-verification 의 본질적 사각 (caption 과 verifier 가 같은 방향으로 hallucinate 한 케이스).
+- **그림 3 — OD recall 한계 (FP)**: `image_id 27696` caption *"A person cutting a pizza with a knife and fork"* — GT 에 `knife` 가 실제로 존재. 그러나 `<OD>` 가 작은 knife 를 검출하지 못해 시스템이 정상 객체를 unsupported 로 잘못 깃발 → over-flag. small-object detection 한계의 직접 증거.
+- **그림 4 — 검증 성공 (TP)**: `image_id 41488` caption *"A green highway sign that says no trucks on it"* — caption 이 표지판의 *글자* "trucks" 를 인식해 truck mention 을 만들지만 GT 에 truck 은 없음. `<OD>` 도 truck 을 검출하지 않아 시스템이 정확히 unsupported 로 깃발 → 검증의 의도된 동작.
 
 ## 6. 논의
 
