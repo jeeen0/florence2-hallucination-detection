@@ -73,3 +73,5 @@ paper/**/*.tmp
 
 # Local-only progress notes (per-step working log for the author)
 progress/
+progress.zip
+*.zip
