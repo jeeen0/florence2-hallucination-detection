@@ -21,9 +21,9 @@ from modules.extract import normalize
 
 
 def _device_dtype():
-    if torch.cuda.is_available():
-        return "cuda", torch.float16
-    return "cpu", torch.float32
+    # float32 on both detectors: small models, negligible speed cost on a 4090,
+    # and it avoids fp16 input/weight dtype-mismatch issues (esp. Grounding DINO).
+    return ("cuda" if torch.cuda.is_available() else "cpu"), torch.float32
 
 
 class OwlV2Detector:
@@ -46,8 +46,6 @@ class OwlV2Detector:
         if not queries:
             return []
         inputs = self.processor(text=[queries], images=image, return_tensors="pt").to(self.device)
-        if self.dtype == torch.float16:
-            inputs = {k: (v.half() if v.is_floating_point() else v) for k, v in inputs.items()}
         outputs = self.model(**inputs)
         target = torch.tensor([image.size[::-1]], device=self.device)  # (h, w)
         res = self.processor.post_process_object_detection(
