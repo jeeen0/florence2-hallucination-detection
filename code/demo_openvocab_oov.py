@@ -27,27 +27,25 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--image", type=Path, required=True)
     ap.add_argument("--words", required=True, help="comma-separated candidate object words (any vocabulary)")
-    ap.add_argument("--threshold", type=float, default=0.10)
+    ap.add_argument("--threshold", type=float, default=0.20)
     ap.add_argument("--out", type=Path, required=True)
     args = ap.parse_args()
 
     queries = [w.strip() for w in args.words.split(",") if w.strip()]
     image = Image.open(args.image).convert("RGB")
     det = OwlV2Detector()
-    detections = det.detect(image, queries, threshold=args.threshold)
-    found = {d.canonical for d in detections}
+    best = det.detect_best(image, queries, threshold=args.threshold)  # one box per word
 
     fig, ax = plt.subplots(figsize=(7, 7))
     ax.imshow(image); ax.axis("off")
-    for d in detections:
-        x1, y1, x2, y2 = d.bbox
-        ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, fill=False, edgecolor="#2b8c8c", linewidth=2.2))
-        ax.text(x1, max(0, y1 - 4), d.canonical, color="white", fontsize=11,
+    for q, (score, (x1, y1, x2, y2)) in best.items():
+        ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, fill=False, edgecolor="#2b8c8c", linewidth=2.4))
+        ax.text(x1, max(0, y1 - 4), f"{q} {score:.2f}", color="white", fontsize=12,
                 bbox=dict(facecolor="#2b8c8c", edgecolor="none", pad=1.5))
-    supported = [q for q in queries if q in found]
-    unsupported = [q for q in queries if q not in found]
+    supported = [q for q in queries if q in best]
+    unsupported = [q for q in queries if q not in best]
     title = "supported: " + (", ".join(supported) or "—") + "\nunsupported: " + (", ".join(unsupported) or "—")
-    ax.set_title(title, fontsize=11)
+    ax.set_title(title, fontsize=12)
     args.out.parent.mkdir(parents=True, exist_ok=True)
     fig.tight_layout(); fig.savefig(args.out, dpi=170, bbox_inches="tight")
     print(f"Saved -> {args.out}")

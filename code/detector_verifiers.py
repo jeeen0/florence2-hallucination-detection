@@ -58,6 +58,26 @@ class OwlV2Detector:
             dets.append(Detection(label=q, canonical=q, bbox=(x1, y1, x2, y2)))
         return dets
 
+    @torch.no_grad()
+    def detect_best(self, image: Image.Image, queries: list[str], threshold: float = 0.20):
+        """Return {query: (score, bbox)} keeping only the highest-scoring box per
+        query. Used for clean single-box-per-object visualizations."""
+        if not queries:
+            return {}
+        inputs = self.processor(text=[queries], images=image, return_tensors="pt").to(self.device)
+        outputs = self.model(**inputs)
+        target = torch.tensor([image.size[::-1]], device=self.device)
+        res = self.processor.post_process_object_detection(
+            outputs, threshold=threshold, target_sizes=target
+        )[0]
+        best: dict[str, tuple] = {}
+        for score, label_idx, box in zip(res["scores"], res["labels"], res["boxes"]):
+            q = queries[int(label_idx)]
+            s = float(score)
+            if q not in best or s > best[q][0]:
+                best[q] = (s, tuple(float(v) for v in box.tolist()))
+        return best
+
 
 class GroundingDinoDetector:
     """Grounding DINO open-vocabulary detector (IDEA-Research/grounding-dino-base)."""
