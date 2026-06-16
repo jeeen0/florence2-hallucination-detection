@@ -27,7 +27,7 @@ from pathlib import Path
 from PIL import Image
 
 from detector_verifiers import build_detector
-from modules.extract import extract_mentions
+from modules.extract import COCO80, extract_mentions
 from modules.verify import verify_with_detections
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -53,6 +53,13 @@ def main() -> None:
     ap.add_argument("--n", type=int, default=500, help="First N images from the caption CSV")
     ap.add_argument("--image-dir", type=Path, default=REPO_ROOT / "data" / "coco_val")
     ap.add_argument("--vocab", choices=["strict", "aggressive"], default="strict")
+    ap.add_argument(
+        "--query-mode",
+        choices=["mention", "coco80"],
+        default="mention",
+        help="mention: query only the caption's mention labels (targeted, query-style); "
+        "coco80: query all 80 COCO labels every image (untargeted, like <OD> generation)",
+    )
     ap.add_argument("--threshold", type=float, default=0.10, help="OWLv2 score threshold")
     ap.add_argument("--box-threshold", type=float, default=0.30, help="Grounding DINO box threshold")
     ap.add_argument("--text-threshold", type=float, default=0.25, help="Grounding DINO text threshold")
@@ -60,10 +67,12 @@ def main() -> None:
     args = ap.parse_args()
 
     rows = _load_caption_csv(args.caption_csv)[: args.n]
-    out_path = args.out or (REPO_ROOT / "outputs" / "cross" / f"{args.detector}_grounding_{args.n}.csv")
+    tag = args.detector + ("_coco80" if args.query_mode == "coco80" else "")
+    out_path = args.out or (REPO_ROOT / "outputs" / "cross" / f"{tag}_grounding_{args.n}.csv")
     out_path.parent.mkdir(parents=True, exist_ok=True)
+    coco_queries = list(COCO80)
 
-    print(f"[verifier={args.detector}] {len(rows)} images from {args.caption_csv.name}")
+    print(f"[verifier={args.detector} query-mode={args.query_mode}] {len(rows)} images from {args.caption_csv.name}")
     detector = build_detector(args.detector)
 
     grounding_rows: list[tuple] = []
@@ -73,7 +82,7 @@ def main() -> None:
         if not mentions:
             continue
         image = Image.open(args.image_dir / f"{img_id:012d}.jpg").convert("RGB")
-        queries = sorted({m.canonical for m in mentions})
+        queries = coco_queries if args.query_mode == "coco80" else sorted({m.canonical for m in mentions})
         if args.detector == "owlv2":
             detections = detector.detect(image, queries, threshold=args.threshold)
         else:
