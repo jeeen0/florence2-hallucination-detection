@@ -1,0 +1,501 @@
+image_id,prompt,caption,canonical_objects
+350679,<CAPTION>,A bride and groom cutting their wedding cake.,cake
+387383,<CAPTION>,Three cats laying on a bed with a blue comforter.,"cat,bed"
+325483,<CAPTION>,Two men playing a video game in a living room.,person
+579321,<CAPTION>,A small dog wearing a shirt on a leash.,dog
+72813,<CAPTION>,A dog laying on a bed with a blanket and pillows.,"dog,bed"
+491090,<CAPTION>,A woman sitting on top of a black motorcycle.,"person,motorcycle"
+87038,<CAPTION>,A skateboarder is doing a trick in a skate park.,
+217957,<CAPTION>,A clock on the side of a building with statues on it.,clock
+455301,<CAPTION>,A woman laying in bed next to a little girl.,"person,bed"
+155179,<CAPTION>,A loaf of bread sitting on top of a white plate.,
+111207,<CAPTION>,A man riding a skateboard on top of a piece of wood.,"person,skateboard"
+546659,<CAPTION>,A black train traveling down train tracks next to tall buildings.,train
+102644,<CAPTION>,A bathroom with a toilet and a bathtub.,toilet
+514914,<CAPTION>,"A bathroom with a tub, sink, toilet and shower.","sink,toilet"
+445999,<CAPTION>,A woman brushing her teeth in front of a mirror.,person
+308328,<CAPTION>,A group of airport workers loading luggage onto a conveyor belt.,suitcase
+84664,<CAPTION>,"A plate of food with eggs, potatoes, meat and a strawberry.",
+189752,<CAPTION>,A person eating pizza and a salad at a restaurant.,"person,pizza"
+236721,<CAPTION>,A tray of breakfast foods and drinks on a table.,
+507037,<CAPTION>,A group of people standing outside of a building.,person
+132587,<CAPTION>,A man sitting on a bench with a bottle of water.,"person,bench,bottle"
+257865,<CAPTION>,A man holding a tennis racquet on a tennis court.,"person,tennis racket"
+474344,<CAPTION>,A man holding a baseball bat on top of a field.,"person,baseball bat"
+27982,<CAPTION>,A bathroom with a toilet and a sink.,"toilet,sink"
+297698,<CAPTION>,A skier is in mid air over a building.,
+272136,<CAPTION>,An old war plane is on display in a museum.,airplane
+138639,<CAPTION>,A man riding a bike down a street next to tall buildings.,"person,bicycle"
+474095,<CAPTION>,A man sitting on a toilet smoking a cigarette.,"person,toilet"
+427077,<CAPTION>,An old picture of a baseball player holding a bat.,
+346905,<CAPTION>,Two adult elephants and a baby elephant standing in front of a forest.,elephant
+254016,<CAPTION>,Donuts are being made on a machine in a factory.,donut
+209829,<CAPTION>,A man riding a wave on top of a surfboard.,"person,surfboard"
+110211,<CAPTION>,A herd of zebra walking across a dry grass field.,zebra
+297681,<CAPTION>,A car driving through a flooded street at night.,car
+405205,<CAPTION>,A white and green bus parked in a parking lot.,bus
+484296,<CAPTION>,A zebra standing next to a zebra laying on the ground.,zebra
+369503,<CAPTION>,A woman standing in a kitchen next to a sink.,"person,sink"
+279278,<CAPTION>,A group of people standing around a skateboard.,"person,skateboard"
+363666,<CAPTION>,A group of people sitting at a table eating breakfast.,person
+1675,<CAPTION>,A black and white cat laying on top of a laptop computer.,"cat,laptop"
+450075,<CAPTION>,A woman is helping another woman tie her tie.,"person,tie"
+89761,<CAPTION>,A white toilet sitting in front of a tree.,toilet
+100274,<CAPTION>,A long train traveling down train tracks next to a parking lot.,train
+415741,<CAPTION>,"A room with a bed, dresser, chair, and a table.","bed,chair"
+475484,<CAPTION>,A yellow parking meter sitting on the side of a road.,parking meter
+289702,<CAPTION>,A black dog sitting in front of a mirror.,dog
+509719,<CAPTION>,A small bird standing on the ground next to a tree.,bird
+211042,<CAPTION>,A cat standing in front of a toilet in a bathroom.,"cat,toilet"
+375015,<CAPTION>,A small brown bear walking across a dirt field.,bear
+353970,<CAPTION>,A gray cat sitting on top of a wooden chair.,"cat,chair"
+210299,<CAPTION>,A young boy riding a bike in a parking lot.,"person,bicycle"
+439623,<CAPTION>,A white fire hydrant sitting on the side of a road.,fire hydrant
+183246,<CAPTION>,A traffic light hanging over a street next to a truck.,"traffic light,truck"
+491683,<CAPTION>,A horse grazing in a field with a train in the background.,"horse,train"
+186449,<CAPTION>,An old woman sitting on a bench with a cane.,"person,bench"
+204186,<CAPTION>,A man riding a four wheeler in front of a crowd.,person
+203546,<CAPTION>,A brown bear swimming in a body of water.,bear
+273712,<CAPTION>,A black refrigerator sitting in a kitchen next to a doorway.,refrigerator
+61584,<CAPTION>,A man and woman sitting on a statue of a horse.,"person,horse"
+222991,<CAPTION>,A pair of black rain boots next to a red umbrella.,umbrella
+63965,<CAPTION>,A woman holding a plate with a piece of cake on it.,"person,cake"
+189451,<CAPTION>,A piece of chocolate cake on a plate with a knife and a spatula.,"cake,knife"
+504389,<CAPTION>,A man and a woman holding tennis rackets.,"person,tennis racket"
+196009,<CAPTION>,Two carrots and a spoon on a table.,"carrot,spoon"
+357978,<CAPTION>,A woman standing next to a woman holding a Nintendo Wii game controller.,person
+197388,<CAPTION>,A group of men skiing down a snow covered slope.,person
+305343,<CAPTION>,A pair of cups with animal drawings on them.,cup
+117908,<CAPTION>,A man looking into a refrigerator with a cat on the door.,"person,refrigerator,cat"
+802,<CAPTION>,"A kitchen with a refrigerator, stove and cabinets.",refrigerator
+140076,<CAPTION>,A table with a vase of flowers on top of it.,vase
+323202,<CAPTION>,A toilet with three seashells on the tank.,toilet
+389532,<CAPTION>,A man standing on top of a building taking a picture of birds.,"person,bird"
+229311,<CAPTION>,A kitchen with a double sink and a window.,sink
+267933,<CAPTION>,A herd of white horses walking across a river.,horse
+401991,<CAPTION>,Two small dogs sleeping on a bed together.,"dog,bed"
+15497,<CAPTION>,A cat laying on a couch next to a computer mouse.,"cat,couch,mouse"
+562229,<CAPTION>,A young boy riding a skateboard down a street.,"person,skateboard"
+385029,<CAPTION>,A person cutting a pizza on a wooden cutting board.,"person,pizza"
+199310,<CAPTION>,A man holding a tennis racquet on a lush green field.,"person,tennis racket"
+189226,<CAPTION>,A red fire hydrant sitting on the side of a road.,fire hydrant
+147205,<CAPTION>,A plate of food that is on a table.,
+201646,<CAPTION>,A man in glasses is playing a video game.,person
+255401,<CAPTION>,A dirty bathroom with two toilets and a sink.,"toilet,sink"
+290768,<CAPTION>,A kitchen with a checkered floor and a window.,
+552371,<CAPTION>,Two horses standing next to each other in a fenced in area.,horse
+527528,<CAPTION>,A group of kites flying in the sky over a field.,kite
+314709,<CAPTION>,A woman is skiing down a snowy hill.,person
+472030,<CAPTION>,A bench in the middle of a forest.,bench
+378605,<CAPTION>,A doughnut on a plate next to a cup of coffee.,"donut,cup"
+423123,<CAPTION>,A man and woman looking in a small refrigerator.,"person,refrigerator"
+383443,<CAPTION>,"A large bathroom with a tub, sink and television.","sink,tv"
+73153,<CAPTION>,A man standing next to a tree in a forest.,person
+2299,<CAPTION>,A black and white photo of a group of children.,person
+482487,<CAPTION>,A reflection of a clock in a window.,clock
+304404,<CAPTION>,A baseball player swinging a bat on top of a field.,
+55167,<CAPTION>,A yellow and blue bus driving down a street.,bus
+371749,<CAPTION>,Two women are playing a video game together.,person
+130826,<CAPTION>,A man and a woman sitting on a bench.,"person,bench"
+274066,<CAPTION>,A group of people in the ocean with surfboards.,"person,surfboard"
+442306,<CAPTION>,A little girl standing on a rock holding an umbrella.,"person,umbrella"
+392722,<CAPTION>,A green double decker bus parked on the side of a road.,bus
+234660,<CAPTION>,Two bullet trains are traveling down the tracks.,train
+343706,<CAPTION>,A woman holding a cell phone in a crocheted case.,"person,cell phone"
+308193,<CAPTION>,A clock tower with a clock on the side of it.,clock
+14007,<CAPTION>,A cat sitting on top of a blue refrigerator.,"cat,refrigerator"
+456394,<CAPTION>,A blue motorcycle is on display in a showroom.,motorcycle
+217219,<CAPTION>,A bed with a quilt and newspapers on it.,bed
+366141,<CAPTION>,"A living room with a couch, chair and television.","couch,chair,tv"
+121744,<CAPTION>,A man holding a tennis racquet on top of a tennis court.,"person,tennis racket"
+504439,<CAPTION>,Two zebras are standing in the shade of trees.,zebra
+313588,<CAPTION>,A woman standing on a cobblestone street holding an umbrella.,"person,umbrella"
+239318,<CAPTION>,A laptop computer sitting on top of a wooden table.,laptop
+22396,<CAPTION>,A plane flying in the sky with the moon in the background.,airplane
+88485,<CAPTION>,A man holding a yellow and white frisbee.,"person,frisbee"
+482436,<CAPTION>,A man standing in front of a counter next to a woman.,person
+492110,<CAPTION>,A man sitting at a table using a laptop computer.,"person,laptop"
+32570,<CAPTION>,A man riding a wave on top of a surfboard.,"person,surfboard"
+166563,<CAPTION>,A large statue of an elephant on top of a building.,elephant
+500826,<CAPTION>,A street sign on a pole in front of a tall building.,
+401862,<CAPTION>,A group of people standing outside of a food truck.,"person,truck"
+561465,<CAPTION>,A box of donuts and a plate of meat on a table.,donut
+375430,<CAPTION>,A stack of pancakes on a plate on a table.,
+137576,<CAPTION>,A group of cows eating hay in a barn.,cow
+45229,<CAPTION>,"A kitchen with a stove, cabinets and a window.",
+162732,<CAPTION>,A group of men standing next to each other on a field.,person
+553511,<CAPTION>,Cars are stopped at a red light at an intersection.,car
+515350,<CAPTION>,A surfer riding a large wave in the ocean.,
+489611,<CAPTION>,A young boy holding a Nintendo Wii game controller.,person
+519522,<CAPTION>,A large clock tower towering over a city at night.,clock
+373353,<CAPTION>,A city street filled with lots of traffic and tall buildings.,
+155443,<CAPTION>,A train pulling into a train station next to a building.,train
+311392,<CAPTION>,A black and white cow standing next to a man.,"cow,person"
+458255,<CAPTION>,A woman laying in bed with a black cat.,"person,bed,cat"
+386457,<CAPTION>,A cat peeking out from behind a wooden door.,cat
+409630,<CAPTION>,A computer keyboard and mouse sitting next to a laptop.,"keyboard,mouse,laptop"
+455981,<CAPTION>,A white toilet sitting in a bathroom next to a toilet paper roll.,toilet
+384513,<CAPTION>,A donkey pulling a blue wagon down a cobblestone street.,
+362682,<CAPTION>,A bus with a cat drawn on the side of it.,"bus,cat"
+446206,<CAPTION>,A train traveling over a bridge next to tall buildings.,train
+192607,<CAPTION>,A man standing next to a truck in the woods.,"person,truck"
+210030,<CAPTION>,A slice of cake on a plate with a fork.,"cake,fork"
+547336,<CAPTION>,A woman sitting on the ground next to a fire hydrant.,"person,fire hydrant"
+522889,<CAPTION>,A woman swinging a tennis racquet on a tennis court.,"person,tennis racket"
+261888,<CAPTION>,A person on a bicycle on the side of the road.,"person,bicycle"
+31322,<CAPTION>,A flock of white swans floating on top of a lake.,
+554266,<CAPTION>,A person laying on a bed with their feet up.,"person,bed"
+193884,<CAPTION>,A stop sign in front of a cemetery.,stop sign
+386277,<CAPTION>,An orange on a tree with green leaves.,orange
+241602,<CAPTION>,"A bathroom with a toilet, sink and bathtub.","toilet,sink"
+336628,<CAPTION>,A man in a clown suit standing on the back of a bus.,"person,bus"
+229948,<CAPTION>,A man driving a wagon being pulled by two horses.,"person,horse"
+481480,<CAPTION>,A couple of horses racing down a race track.,horse
+148508,<CAPTION>,A red double decker bus driving down a street.,bus
+348045,<CAPTION>,Three urinals on a wall in a men's restroom.,person
+375078,<CAPTION>,A black and white vase with a leaf in it.,vase
+323895,<CAPTION>,A man in yellow shirt and black shorts playing a game of tennis.,person
+359937,<CAPTION>,A double decker bus parked in a parking lot.,bus
+312192,<CAPTION>,A plate of food on a table at a restaurant.,
+176037,<CAPTION>,A city bus driving down a street at night.,bus
+448410,<CAPTION>,A yellow and white train pulling into a train station.,train
+438017,<CAPTION>,A red traffic light sitting above a street.,traffic light
+225532,<CAPTION>,A highway with cars driving down it and a green sign above it.,car
+360393,<CAPTION>,A pizza sitting on top of a pan covered in toppings.,pizza
+370486,<CAPTION>,A woman holding an umbrella in front of a crowd of people.,"person,umbrella"
+200667,<CAPTION>,A cow standing under a metal structure in a barn.,cow
+193348,<CAPTION>,A young boy brushing his teeth with a toothbrush.,"person,toothbrush"
+202228,<CAPTION>,A man taking a picture of himself in a mirror.,person
+395343,<CAPTION>,Three vases with red flowers in them on a table.,vase
+554595,<CAPTION>,A man laying on the beach next to a surfboard.,"person,surfboard"
+345361,<CAPTION>,A group of children sitting at a picnic table eating cake.,"person,cake"
+347930,<CAPTION>,A dog sitting on top of a couch with pillows.,"dog,couch"
+306437,<CAPTION>,A man riding a skateboard up the side of a cement block.,"person,skateboard"
+21604,<CAPTION>,A man wearing a suit and tie with lights on it.,"person,tie"
+293071,<CAPTION>,A fire hydrant painted in the colors of the American flag.,fire hydrant
+530099,<CAPTION>,A calico cat sitting on top of a car.,"cat,car"
+393014,<CAPTION>,A sandwich with meat and cheese on a counter.,sandwich
+47112,<CAPTION>,A pizza sitting on top of a white plate on a table.,pizza
+551215,<CAPTION>,A woman playing tennis on a tennis court.,person
+464251,<CAPTION>,A red bird sitting on top of a wooden bench.,"bird,bench"
+222559,<CAPTION>,A group of people standing on top of a beach near the ocean.,person
+244411,<CAPTION>,Two black cows are standing in a grassy field.,cow
+468505,<CAPTION>,A man sitting at a table with food on it.,person
+253452,<CAPTION>,A plate of food and a cup of coffee on a table.,cup
+41633,<CAPTION>,A red truck parked in a parking lot.,truck
+80340,<CAPTION>,A little boy in a striped shirt and tie pulling a suitcase.,"person,tie,suitcase"
+579655,<CAPTION>,A woman talking on a cell phone in front of a shelf of glasses.,"person,cell phone"
+526103,<CAPTION>,An elephant standing behind a fence with a sign in front of it.,elephant
+389812,<CAPTION>,A man holding a bunch of bananas in his hands.,"person,banana"
+213035,<CAPTION>,Two people holding their cell phones in their hands.,"person,cell phone"
+579818,<CAPTION>,A train traveling over a wooden bridge on a hill.,train
+210789,<CAPTION>,A man and a little girl standing under an umbrella.,"person,umbrella"
+23781,<CAPTION>,A table topped with lots of different types of vegetables.,
+356261,<CAPTION>,A horse with a saddle grazing in a field.,horse
+256407,<CAPTION>,A tray with cups and saucers sitting on top of it.,cup
+127494,<CAPTION>,A plate of food that is on a table.,
+176901,<CAPTION>,A group of people riding skis down a snow covered slope.,"person,skis"
+334530,<CAPTION>,A man riding a wave on top of a surfboard.,"person,surfboard"
+98497,<CAPTION>,A yellow sign with a man carrying a surfboard on it.,"person,surfboard"
+556000,<CAPTION>,A group of young children playing a video game.,person
+412240,<CAPTION>,A puppy sitting next to a pair of black shoes.,dog
+328337,<CAPTION>,A young boy holding a white frisbee in his hand.,"person,frisbee"
+310622,<CAPTION>,A pole with several street signs on it in a city.,
+547144,<CAPTION>,A desk with several computers and a laptop on it.,laptop
+572900,<CAPTION>,A man in a blue shirt throwing a frisbee.,"person,frisbee"
+153217,<CAPTION>,A black cat standing next to a parked motorcycle.,"cat,motorcycle"
+369751,<CAPTION>,A row of parking meters sitting on the side of a road.,parking meter
+499768,<CAPTION>,A fire hydrant sitting on the side of a road.,fire hydrant
+324614,<CAPTION>,A woman brushing her teeth in front of a mirror.,person
+491497,<CAPTION>,A white chair sitting in front of a TV.,"chair,tv"
+169076,<CAPTION>,A dog is watching a television show in a living room.,"dog,tv"
+84477,<CAPTION>,A beach chair and umbrella on a beach.,"chair,umbrella"
+516677,<CAPTION>,A group of people standing on top of a snow covered mountain.,person
+247917,<CAPTION>,A group of baseball players posing for a picture.,
+447187,<CAPTION>,A group of men playing a game of baseball.,person
+425390,<CAPTION>,A Siamese cat laying on top of a laptop computer.,"cat,laptop"
+39484,<CAPTION>,A city street filled with lots of traffic next to tall buildings.,
+261161,<CAPTION>,A dog sitting on a leash next to a bench.,"dog,bench"
+423229,<CAPTION>,A train traveling down tracks next to a lush green forest.,train
+383676,<CAPTION>,Two giraffes standing next to each other in a zoo enclosure.,giraffe
+252216,<CAPTION>,A white horse and a brown and white llama in a field.,horse
+413552,<CAPTION>,A woman holding a baby with a toothbrush in her mouth.,"person,toothbrush"
+494913,<CAPTION>,A man sitting on a couch in a living room.,"person,couch"
+284445,<CAPTION>,A group of people walking down a street next to a traffic light.,"person,traffic light"
+215114,<CAPTION>,A man peeking out of a refrigerator door.,"person,refrigerator"
+75612,<CAPTION>,A group of people standing in a room playing a video game.,person
+456143,<CAPTION>,A table topped with red baskets filled with food.,
+479953,<CAPTION>,A female soccer player in a green uniform kicking a soccer ball.,sports ball
+144932,<CAPTION>,A tug boat traveling across a large body of water.,boat
+365098,<CAPTION>,A boat floating on top of a body of water.,boat
+363188,<CAPTION>,A group of people dressed as zombies walking down a street.,person
+449579,<CAPTION>,A female tennis player in action on the court.,
+47571,<CAPTION>,A couple of people riding on a horse drawn carriage.,"person,horse"
+461275,<CAPTION>,A couple of street signs sitting on top of a metal pole.,
+183104,<CAPTION>,Two giraffes standing next to each other near a building.,giraffe
+165336,<CAPTION>,Two giraffes and an antelope in a grassy field.,giraffe
+13177,<CAPTION>,A man is working on a wheel rim.,person
+257084,<CAPTION>,A group of people watching a skateboarder on a ramp.,person
+300276,<CAPTION>,A group of people standing around a table filled with cakes and cupcakes.,"person,cake"
+79229,<CAPTION>,A man riding a horse next to a dog in a field.,"person,horse,dog"
+311789,<CAPTION>,A cat laying on top of a wooden table next to a keyboard.,"cat,keyboard"
+118921,<CAPTION>,A woman in a pink jacket is cross country skiing.,person
+87144,<CAPTION>,A woman and a man sitting on a bench with a baby.,"person,bench"
+266892,<CAPTION>,A woman holding a tennis racquet on a tennis court.,"person,tennis racket"
+26465,<CAPTION>,A laptop computer sitting on top of a white table.,laptop
+152870,<CAPTION>,A giraffe standing in the middle of a field.,giraffe
+85682,<CAPTION>,A group of people standing on top of a snow covered slope.,person
+66886,<CAPTION>,A little girl brushing her hair with a pink brush.,person
+527960,<CAPTION>,A park bench with graffiti on it in the woods.,bench
+275058,<CAPTION>,A person on a surfboard in the air above the water.,"person,surfboard"
+187243,<CAPTION>,A woman laying on the floor in a bathroom.,person
+344795,<CAPTION>,An oven with a foil covered pan inside of it.,oven
+440508,<CAPTION>,An orange train traveling through a lush green forest.,"orange,train"
+273232,<CAPTION>,A man holding a surfboard while walking a dog in the ocean.,"person,surfboard,dog"
+92091,<CAPTION>,A little girl brushing her teeth with a teddy bear.,"person,teddy bear"
+564280,<CAPTION>,A dog sitting on a red couch next to a remote control.,"dog,couch,remote"
+74860,<CAPTION>,A man sitting on a snowboard in the snow.,"person,snowboard"
+227491,<CAPTION>,A woman sitting on a bench in the snow eating a donut.,"person,bench,donut"
+455937,<CAPTION>,A man sitting on a couch playing a video game.,"person,couch"
+276434,<CAPTION>,A couple cutting a wedding cake with fruit on top.,cake
+71226,<CAPTION>,Two dogs and a cat sleeping on a bed.,"dog,cat,bed"
+477227,<CAPTION>,A group of boats docked at a dock in a harbor.,boat
+357903,<CAPTION>,A pizza with an egg on top of it.,pizza
+248616,<CAPTION>,A man swinging a tennis racquet at a tennis ball.,"person,tennis racket,sports ball"
+154087,<CAPTION>,A group of people standing on top of a snow covered slope.,person
+502168,<CAPTION>,A group of men standing on top of a boat in the ocean.,"person,boat"
+182417,<CAPTION>,A piece of pie on a plate with two spoons.,spoon
+117744,<CAPTION>,A young girl holding a yellow tennis racquet.,"person,tennis racket"
+289343,<CAPTION>,A man riding a bicycle in front of a building.,"person,bicycle"
+359540,<CAPTION>,A baseball player swinging a bat at a ball.,
+353027,<CAPTION>,A hand holding up a slice of pizza.,pizza
+368038,<CAPTION>,A long train with many caboose on the tracks.,train
+176446,<CAPTION>,A notebook with a pen on top of it next to a laptop.,laptop
+286553,<CAPTION>,A man and a woman sitting at a table with two pizzas.,"person,pizza"
+115245,<CAPTION>,A room filled with lots of luggage sitting on top of a wooden floor.,suitcase
+453634,<CAPTION>,"A bathroom with a toilet, sink, and shower stall.","toilet,sink"
+416885,<CAPTION>,A table topped with plates of food and a glass of wine.,wine glass
+213830,<CAPTION>,A couple of men playing tennis on a court.,person
+546717,<CAPTION>,A woman sitting on a couch using a laptop computer.,"person,couch,laptop"
+195754,<CAPTION>,"A living room with a couch, chairs and a television.","couch,chair,tv"
+499266,<CAPTION>,A person holding a smart phone in their hand.,"person,cell phone"
+31735,<CAPTION>,A living room with a blue couch and two windows.,couch
+66841,<CAPTION>,A toaster with a face made out of spoons.,"toaster,spoon"
+177893,<CAPTION>,A red and white bus parked on the side of a street.,bus
+130586,<CAPTION>,A young boy is running with a kite.,"person,kite"
+109118,<CAPTION>,A black and white photo of three baseball players.,
+490413,<CAPTION>,A large passenger jet sitting on top of an airport runway.,airplane
+504415,<CAPTION>,A man playing tennis on a tennis court.,person
+568981,<CAPTION>,A man taking a picture of a skateboarder.,person
+512929,<CAPTION>,Two young girls are cooking green beans in a skillet.,person
+306893,<CAPTION>,Two red and white trains passing through a train station.,train
+104198,<CAPTION>,A stop sign on a pole in front of a white building.,stop sign
+38070,<CAPTION>,A white toilet sitting in a bathroom next to a trash can.,toilet
+286503,<CAPTION>,An elephant standing under a metal structure in a zoo.,elephant
+51309,<CAPTION>,A group of horses standing next to each other.,horse
+776,<CAPTION>,Three teddy bears sitting next to each other.,teddy bear
+132408,<CAPTION>,A man plowing a field with two large horses.,"person,horse"
+345261,<CAPTION>,Two giraffes standing in a field with a mountain in the background.,giraffe
+357081,<CAPTION>,Two spotted cows grazing in a grassy field.,cow
+238013,<CAPTION>,A man is playing tennis on a tennis court.,person
+135670,<CAPTION>,A bicycle is propped up against a rail on a train.,"bicycle,train"
+105455,<CAPTION>,A clock tower in the middle of a street.,clock
+404839,<CAPTION>,Two people are playing a video game together.,person
+131444,<CAPTION>,A man in a suit and tie standing in front of a tree.,"person,tie"
+102411,<CAPTION>,Two people on a motorcycle in a parking lot.,"person,motorcycle"
+232348,<CAPTION>,A silver toaster sitting on top of a kitchen counter.,toaster
+362434,<CAPTION>,A brown teddy bear sitting in a cardboard box.,teddy bear
+427055,<CAPTION>,A clock on a pole on a sidewalk next to a building.,clock
+578922,<CAPTION>,A vase of red flowers sitting on a bathroom counter.,vase
+78420,<CAPTION>,A cat laying next to a laptop computer.,"cat,laptop"
+213935,<CAPTION>,A pile of apples and oranges sitting next to each other.,"apple,orange"
+530061,<CAPTION>,A little girl sitting at a table eating from a bowl.,"person,bowl"
+284296,<CAPTION>,Three giraffes drinking water from a watering hole.,giraffe
+463527,<CAPTION>,"A tray with a sandwich, salad, and a cup of coffee.","sandwich,cup"
+139871,<CAPTION>,A small airplane sitting on top of an airport tarmac.,airplane
+64084,<CAPTION>,A white plate topped with slices of bread next to a bowl of food.,bowl
+494863,<CAPTION>,A train traveling down tracks next to a forest.,train
+334417,<CAPTION>,A man in a suit eating a piece of pizza.,"person,pizza"
+49810,<CAPTION>,A cat sitting on a deck looking at its reflection in a mirror.,cat
+547502,<CAPTION>,A group of four dogs playing with a frisbee in the grass.,"dog,frisbee"
+569030,<CAPTION>,A fire hydrant with a hose connected to it on a sidewalk.,fire hydrant
+477805,<CAPTION>,A man sitting in front of a laptop computer.,"person,laptop"
+386210,<CAPTION>,"A window display with grass, pineapples and oranges.",orange
+152740,<CAPTION>,A herd of cattle grazing on a dry grass covered field.,cow
+79034,<CAPTION>,A blue fire hydrant in the middle of a field.,fire hydrant
+465549,<CAPTION>,A man and a woman playing a game with Nintendo Wii controllers.,person
+157601,<CAPTION>,A woman eating a hot dog next to two cups of coffee.,"person,hot dog,cup"
+559099,<CAPTION>,A herd of cattle grazing on a lush green field.,cow
+207538,<CAPTION>,A white microwave oven mounted to a kitchen wall.,"microwave,oven"
+369675,<CAPTION>,A red and white train traveling down train tracks next to a building.,train
+351589,<CAPTION>,A bench sitting in front of a building.,bench
+395180,<CAPTION>,A man on a bike looking at a row boat in the water.,"person,bicycle,boat"
+432553,<CAPTION>,Two dogs on a bus looking out the window.,"dog,bus"
+306700,<CAPTION>,A woman sitting at a table holding a large pizza.,"person,pizza"
+121591,<CAPTION>,A man doing a trick on a skateboard on a ramp.,"person,skateboard"
+498032,<CAPTION>,A young girl holding a Nintendo Wii game controller.,person
+273642,<CAPTION>,A dog laying down with a remote control in its paws.,"dog,remote"
+535253,<CAPTION>,A shopping cart filled with groceries and a drink.,
+277197,<CAPTION>,A living room filled with furniture and lots of windows.,
+163951,<CAPTION>,A banana sitting on top of a white chair.,"banana,chair"
+13291,<CAPTION>,A group of people posing for a picture with frisbees.,"person,frisbee"
+397327,<CAPTION>,A white toilet sitting next to a white sink.,"toilet,sink"
+405432,<CAPTION>,A bag of peanuts and a box of donuts on a table.,donut
+398810,<CAPTION>,A cat sitting on a chair looking out a window.,"cat,chair"
+476415,<CAPTION>,A man in a white shirt and black tie.,"person,tie"
+235057,<CAPTION>,A giraffe drinking water from a pond.,giraffe
+525247,<CAPTION>,A cat is looking at a laptop screen.,"cat,laptop"
+39956,<CAPTION>,A messy bedroom with a bed and a chair.,"bed,chair"
+490171,<CAPTION>,A man and a dog on a surfboard in the ocean.,"person,dog,surfboard"
+7278,<CAPTION>,A man riding a wave on top of a surfboard.,"person,surfboard"
+165257,<CAPTION>,A kitchen counter with a sink and a box on it.,sink
+431568,<CAPTION>,A pizza sitting on top of a white plate on a table.,pizza
+500663,<CAPTION>,Cows grazing in a field with mountains in the background.,cow
+239627,<CAPTION>,A kitchen sink filled with dishes and cleaning supplies.,sink
+152771,<CAPTION>,A bicycle is parked in a parking lot.,bicycle
+181542,<CAPTION>,A woman crossing the street in front of a group of people on motorcycles.,"person,motorcycle"
+481404,<CAPTION>,The interior of a church with stained glass windows.,
+541773,<CAPTION>,A man pouring wine into a glass at a table.,person
+81394,<CAPTION>,A truck parked on the side of a street.,truck
+241668,<CAPTION>,A woman in a white dress standing next to a man in a suit.,person
+208363,<CAPTION>,A group of people sitting around a table eating pizza.,"person,pizza"
+578967,<CAPTION>,A train traveling down train tracks next to a forest.,train
+409424,<CAPTION>,A basket filled with lots of different types of fruit.,
+78426,<CAPTION>,A gray cat sitting on a desk next to a phone.,"cat,cell phone"
+326462,<CAPTION>,A person holding a doughnut with sprinkles on it.,"person,donut"
+294163,<CAPTION>,A tall clock tower with a tree in front of it.,clock
+289594,<CAPTION>,A man standing on a street corner next to a street sign.,person
+547886,<CAPTION>,Four people are riding horses on the beach.,"person,horse"
+86220,<CAPTION>,A silver car driving down a street next to a bus.,"car,bus"
+449312,<CAPTION>,A woman sitting at a table with a plate of food.,person
+186296,<CAPTION>,A gray and white cat laying on the floor next to a blue shoe.,cat
+554579,<CAPTION>,Three women and a dog standing in a living room.,"person,dog"
+8844,<CAPTION>,A woman standing behind a bunch of ripe bananas.,"person,banana"
+473821,<CAPTION>,A living room with a red couch and chair.,"couch,chair"
+338986,<CAPTION>,A blue train pulling into a train station.,train
+407868,<CAPTION>,A man flying a kite in a park.,"person,kite"
+385719,<CAPTION>,A computer desk with two monitors and a laptop.,laptop
+457848,<CAPTION>,A row of motorcycles parked next to each other.,motorcycle
+266768,<CAPTION>,A group of people sitting around a picnic table.,person
+577584,<CAPTION>,A microwave oven sitting inside of a kitchen cabinet.,"microwave,oven"
+369757,<CAPTION>,A display case filled with lots of different types of pizza.,pizza
+370711,<CAPTION>,A man taking a picture of a window display of umbrellas.,"person,umbrella"
+500477,<CAPTION>,A person shearing the wool off of a sheep,"person,sheep"
+549167,<CAPTION>,A white bowl filled with broccoli and rice.,"bowl,broccoli"
+398237,<CAPTION>,A little girl standing in the grass holding a kite.,"person,kite"
+242411,<CAPTION>,A large white building with a clock on the front of it.,clock
+200252,<CAPTION>,A pair of green tennis shoes sitting on a bed.,bed
+443844,<CAPTION>,A man riding a skateboard up the side of a wooden bench.,"person,skateboard,bench"
+456865,<CAPTION>,A large passenger jet sitting on top of an airport runway.,airplane
+527427,<CAPTION>,A woman sitting in a chair talking on a cell phone.,"person,chair,cell phone"
+303566,<CAPTION>,A group of people standing around a fruit stand.,person
+50326,<CAPTION>,A man standing on top of a sandy beach next to the ocean.,person
+455597,<CAPTION>,A woman standing in a kitchen next to a stove.,person
+483531,<CAPTION>,A bedroom with two twin beds and a painting on the wall.,bed
+166259,<CAPTION>,A group of ducks walking down a sidewalk.,
+515025,<CAPTION>,A woman sitting at a picnic table with a cat.,"person,cat"
+181796,<CAPTION>,A plate of food and a glass of wine on a table.,wine glass
+570664,<CAPTION>,A person feeding a cat a treat in a room.,"person,cat"
+399764,<CAPTION>,A man walking a brown cow with a red ribbon around its neck.,"person,cow"
+156076,<CAPTION>,A group of men sitting around a table eating pizza.,"person,pizza"
+337055,<CAPTION>,A woman sitting on a train track with a blue suitcase.,"person,train,suitcase"
+444879,<CAPTION>,A green and white train traveling down train tracks.,train
+404678,<CAPTION>,A group of people sitting around a table eating.,person
+485802,<CAPTION>,A plane flying in the sky leaving a trail of smoke behind it.,airplane
+269316,<CAPTION>,A group of men playing a game of frisbee.,"person,frisbee"
+290293,<CAPTION>,A subway train pulling into a station with people waiting.,"train,person"
+563281,<CAPTION>,A small child standing in front of a rooster statue.,person
+315219,<CAPTION>,A white phone hanging from a wall next to a window.,cell phone
+433374,<CAPTION>,A herd of elephants standing next to a river.,elephant
+439715,<CAPTION>,A man in a red uniform riding a brown horse.,"person,horse"
+227187,<CAPTION>,A group of birds sitting on a tray of bananas.,"bird,banana"
+450686,<CAPTION>,A person holding a smart phone in their hand.,"person,cell phone"
+121031,<CAPTION>,A group of men riding horses across a river.,"person,horse"
+203389,<CAPTION>,A group of men riding motorcycles on a river.,"person,motorcycle"
+293625,<CAPTION>,Two women sitting on a couch playing a video game.,"person,couch"
+366178,<CAPTION>,A fire hydrant in the snow next to a road.,fire hydrant
+9914,<CAPTION>,"A plate with a sandwich, french fries and ketchup.",sandwich
+226984,<CAPTION>,A kitchen with a white stove top oven next to a refrigerator.,"oven,refrigerator"
+551794,<CAPTION>,A man on a motorcycle on a country road.,"person,motorcycle"
+538458,<CAPTION>,A man flying through the air while riding a skateboard.,"person,skateboard"
+563653,<CAPTION>,A city street with cars parked on the side of it.,car
+270908,<CAPTION>,A man laying on a tennis court holding a tennis racquet.,"person,tennis racket"
+286907,<CAPTION>,A blue toilet sitting in a bathroom next to a trash can.,toilet
+376900,<CAPTION>,A tennis player is getting ready to serve the ball.,
+376284,<CAPTION>,A fire hydrant on the side of the road.,fire hydrant
+555705,<CAPTION>,Two cats sitting next to a pair of white tennis shoes.,cat
+129054,<CAPTION>,A herd of zebra standing on top of a lush green field.,zebra
+259625,<CAPTION>,An elephant in a fenced in area next to a fallen tree.,elephant
+382009,<CAPTION>,A man in yellow shirt and shorts playing a game of tennis.,person
+478286,<CAPTION>,A train traveling over a bridge under a cloudy sky.,train
+89880,<CAPTION>,Two dogs are playing with each other on the grass.,dog
+199236,<CAPTION>,A man in armor riding a horse through a fence.,"person,horse"
+128598,<CAPTION>,A pile of oranges and apples sitting next to each other.,"orange,apple"
+508370,<CAPTION>,Two men standing next to a bicycle on a sidewalk.,"person,bicycle"
+396580,<CAPTION>,A boat floating on top of a lake next to a house.,boat
+106881,<CAPTION>,A bird perched on a tree branch in a forest.,bird
+255965,<CAPTION>,A cat sitting on the ground next to a brick wall.,cat
+463802,<CAPTION>,A teddy bear sitting in front of a picture of a tennis player.,teddy bear
+442009,<CAPTION>,"A bathroom with a tub, sink, and large windows.",sink
+535608,<CAPTION>,A group of people laying on top of a sandy beach.,person
+338325,<CAPTION>,A large passenger jet flying through a cloudy sky.,airplane
+196843,<CAPTION>,A bus parked on the side of the road with a bicycle next to it.,"bus,bicycle"
+434479,<CAPTION>,A couple of small figurines standing next to a slice of pizza.,pizza
+551804,<CAPTION>,A woman holding a tennis racquet on a tennis court.,"person,tennis racket"
+544519,<CAPTION>,A young girl brushing her teeth with a blue toothbrush.,"person,toothbrush"
+185890,<CAPTION>,Two women are playing a video game together.,person
+489339,<CAPTION>,A woman carrying a surfboard on a beach.,"person,surfboard"
+186632,<CAPTION>,A bathroom with two sinks and a television.,"sink,tv"
+161875,<CAPTION>,A woman standing in a field next to a tree.,person
+89078,<CAPTION>,A woman in a purple jacket snowboarding down a hill.,person
+130465,<CAPTION>,A black and white photo of a clock tower.,clock
+262938,<CAPTION>,Two stuffed animals laying on top of an open book.,book
+10995,<CAPTION>,A bed sitting in a bedroom next to a window.,bed
+466835,<CAPTION>,A large bunch of bananas hanging from a banana tree.,banana
+166277,<CAPTION>,A cat drinking water out of a glass on a table.,cat
+289393,<CAPTION>,A group of toy animals standing next to each other.,
+27768,<CAPTION>,A red and white bus driving down a street.,bus
+231527,<CAPTION>,Two small jars of orange juice on a table.,orange
+554735,<CAPTION>,A person holding a slice of pizza in a box.,"person,pizza"
+356125,<CAPTION>,A man standing next to an elephant in a pen.,"person,elephant"
+238866,<CAPTION>,A bunch of glazed donuts are cooling on a rack.,donut
+434230,<CAPTION>,A store filled with lots of vases and plates.,vase
+45090,<CAPTION>,A couple of people riding surfboards on top of a wave.,"person,surfboard"
+205401,<CAPTION>,A small plane sitting on top of a lake next to a boat.,"airplane,boat"
+350054,<CAPTION>,A cat sitting on top of a TV stand in a living room.,"cat,tv"
+167128,<CAPTION>,Two adult elephants and a baby elephant standing in the grass.,elephant
+464358,<CAPTION>,"A bedroom with a bed, chair and television.","bed,chair,tv"
+449432,<CAPTION>,A group of men in uniform standing in front of a blue bus.,"person,bus"
+102805,<CAPTION>,A man in a hat holding a frisbee in a parking lot.,"person,frisbee"
+53994,<CAPTION>,A red and blue parking meter on a sidewalk.,parking meter
+107094,<CAPTION>,A man standing on top of a snow covered slope.,person
+565962,<CAPTION>,A cat looking out a window at a small statue.,cat
+498747,<CAPTION>,A man sitting at a table talking on a cell phone.,"person,cell phone"
+175387,<CAPTION>,A white toilet sitting in a bathroom stall.,toilet
+97585,<CAPTION>,A wall with a bunch of glass vases hanging on it.,vase
+153343,<CAPTION>,Two large teddy bears sitting in front of a building.,teddy bear
+553776,<CAPTION>,A man riding a yellow motorcycle down a street.,"person,motorcycle"
+298738,<CAPTION>,A panda bear is sitting in the grass.,bear
+372349,<CAPTION>,A man and a woman are in the water.,person
+147518,<CAPTION>,"A bathroom with a toilet, sink, and bathtub.","toilet,sink"
+358525,<CAPTION>,A young boy laying on a bed using a laptop computer.,"person,bed,laptop"
+178469,<CAPTION>,A laptop computer sitting on top of a desk.,laptop
+476258,<CAPTION>,A man riding a skateboard down a street.,"person,skateboard"
+498286,<CAPTION>,A close up of a dog with a car in the background.,"dog,car"
+52017,<CAPTION>,A small yellow airplane flying through a gray sky.,airplane
+574315,<CAPTION>,A cat sitting on top of a laptop computer.,"cat,laptop"
+22935,<CAPTION>,A girl in a blue uniform kicking a soccer ball.,"person,sports ball"
+145665,<CAPTION>,A man laying on the ground in a parking lot.,person
+463283,<CAPTION>,A glass of orange juice with a slice of orange on the rim.,orange
+221291,<CAPTION>,A young boy standing in a field with a kite in the sky.,"person,kite"
+394275,<CAPTION>,A green bus driving down a street next to a forest.,bus
+455872,<CAPTION>,A black and white photo of a boat dock.,boat
+526197,<CAPTION>,A display case filled with donuts and pastries.,donut
+52462,<CAPTION>,Two zebras standing in a field of tall grass.,zebra
+52413,<CAPTION>,A person holding a pink cell phone in their hand.,"person,cell phone"
+393115,<CAPTION>,A person riding a skateboard up the side of a ramp.,"person,skateboard"
+130386,<CAPTION>,A large sign on the side of a street.,
+263068,<CAPTION>,A man riding a skateboard up the side of a ramp.,"person,skateboard"
+99039,<CAPTION>,A table topped with two pizzas and two glasses of wine.,pizza
+148662,<CAPTION>,A man holding a hot dog in his hand.,"person,hot dog"
+528524,<CAPTION>,Two sheep walking down a path in the woods.,sheep
